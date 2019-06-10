@@ -1,0 +1,20 @@
+user_list=[2,1,4,5,7]
+i=0
+m=len(user_list)
+a=user_list[0]
+while(i<m):
+    a=user_list[i]
+    j=i
+    while(j<len(user_list)-1):
+        if(a>user_list[j+1]):
+            a=user_list[j+1]
+        j=j+1
+    k=0     
+    while(k<len(user_list)):    
+        if(user_list[k]==a):    
+            tep=user_list[i]
+            user_list[i]=user_list[k]
+            user_list[k]=tep
+        k=k+1    
+    i=i+1
+print user_list
