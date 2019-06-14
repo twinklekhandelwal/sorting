@@ -10,8 +10,7 @@ def bubble_shorting(bubble_short):
                 bubble_short[j]=tem
             j=j+1 
         i=i+1
-
-    return bubble_short          
+     return bubble_short          
 bubble_list=[3,6,8,2,9,1,11,54,32,23,99,88]
 print bubble_shorting(bubble_list)
 
